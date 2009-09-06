@@ -1,0 +1,17 @@
+name:                ChartParse
+version:             0.1
+synopsis:            A framework for building chart parsers 
+description:         This provides a simple framework for building probabilistic 
+                     chart parsers.
+category:            Natural Language Processing
+license:             BSD3
+license-file:        LICENSE
+author:              Sasha Rush
+maintainer:          <srush@mit.edu>
+build-Depends:       base       >= 3   && < 4,
+                     containers >= 0.1 && < 0.3
+build-Type:          Simple
+ghc-options:
+cabal-version:       >= 1.2
+
+Exposed-modules:     NLP.ChartParse

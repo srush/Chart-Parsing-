@@ -1,5 +1,6 @@
-module Chart where 
-import SemiRing
+module NLP.ChartParse.Chart where
+ 
+import NLP.SemiRing
 import Data.Monoid
 import qualified Data.Map as M
 import Data.Array

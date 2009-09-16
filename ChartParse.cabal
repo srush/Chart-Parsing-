@@ -1,4 +1,4 @@
-name:                ChartParse
+name:                chartparse
 version:             0.1
 synopsis:            A framework for building chart parsers 
 description:         This provides a simple framework for building probabilistic 
@@ -17,7 +17,8 @@ flag testing
     default: False
 
 library
-    exposed-modules:     NLP.ChartParse.Chart
+    exposed-modules:     NLP.ChartParse
+                         NLP.ChartParse.Eisner
 
     if flag(testing)
         buildable: False
@@ -25,7 +26,8 @@ library
     build-Depends:   base       >= 3   && < 4,
                      containers >= 0.1 && < 0.3,
                      array,
-                     SemiRing
+                     semiring,
+                     fsm
 
 executable hstestsemi
     main-is:            Tests.hs
